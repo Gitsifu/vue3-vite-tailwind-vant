@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 灰色主题 */
+.g-grey{
+    filter: grayscale(100%);
+}

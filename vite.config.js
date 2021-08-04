@@ -5,7 +5,11 @@ export default {
   plugins: [vue()],
   resolve: {
     alias: [
-      { find: '@', replacement: resolve(__dirname, 'src') }
-    ]
+      { find: '@', replacement: resolve(__dirname, 'src') },
+    ],
+    // or
+    // alias: {
+    //   '@': resolve(__dirname, 'src')
+    // }
   }
 }
