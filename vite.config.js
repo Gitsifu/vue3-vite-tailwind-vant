@@ -1,4 +1,11 @@
 import vue from '@vitejs/plugin-vue'
-module.exports = {
-  plugins: [vue()]
+import { resolve } from 'path'
+
+export default {
+  plugins: [vue()],
+  resolve: {
+    alias: [
+      { find: '@', replacement: resolve(__dirname, 'src') }
+    ]
+  }
 }
