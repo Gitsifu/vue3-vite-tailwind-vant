@@ -1,5 +1,5 @@
 {
-  "name": "vue3-tailwind",
+  "name": "vue3-vite-tailwind-vant",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --host",
