@@ -1,6 +1,7 @@
 <template>
     <div class="tw-flex tw-flex-col tw-items-center">
-        <div class="tw-m-[100px] tw-text-3xl">{{ msg }}</div>
+        <img class="tw-mt-[50px]" src="../assets/logo.png" />
+        <div class="tw-m-[50px] tw-text-3xl">{{ msg }}</div>
         <van-button type="primary" @click="count++">count is: {{ count }}</van-button><br/>
         <van-button type="primary" @click="increment()">storeCount is: {{ storeCount }}</van-button>
     </div>
