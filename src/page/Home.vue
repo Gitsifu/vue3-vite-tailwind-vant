@@ -4,18 +4,16 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 import HelloWorld from "../components/HelloWorld.vue";
-export default {
+import {defineComponent} from "vue";
+export default defineComponent({
     name: "Home",
     components: {HelloWorld},
-    data() {
-        return {}
-    },
     setup() {
         return {}
     }
-}
+})
 </script>
 
 <style scoped>
