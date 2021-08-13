@@ -2,10 +2,9 @@
   "name": "vue3-vite-tailwind-vant",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --host",
+    "serve": "vite serve --host",
     "build": "vite build",
-    "preview": "vite preview --host",
-    "vis": "set vis=true && vite build"
+    "preview": "vite preview --host"
   },
   "dependencies": {
     "vant": "^3.1.5",

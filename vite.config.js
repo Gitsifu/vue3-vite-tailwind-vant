@@ -10,7 +10,8 @@ export default defineConfig({
     legacy({
       targets: ['defaults', 'not IE 11']
     }),
-    process.env.vis && visualizer({
+    // 包大小分析插件
+    visualizer({
       open: true,
       gzipSize: true,
       brotliSize: true

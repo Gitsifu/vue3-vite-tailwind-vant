@@ -20,7 +20,7 @@ npm install
 # 运行
 
 ```
-npm run dev
+npm run serve
 ```
 
 ## 打包
@@ -29,4 +29,8 @@ npm run dev
 npm run build
 ```
 
+## 包大小分析文件
+```
+stats.html
+```
 
