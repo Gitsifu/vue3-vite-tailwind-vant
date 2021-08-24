@@ -8,39 +8,26 @@
     </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import {useStore} from "vuex"
-import {computed, ref, defineComponent} from "vue";
-
-export default defineComponent({
-    name: 'HelloWorld',
-    props: {
-        msg: {
-            type: String,
-            required: true
-        }
-    },
-    setup(props, ctx) {
-        const store = useStore()
-
-        const count = ref<number>(0)
-
-        const storeCount = computed(() => store.state.count)
-
-        const increment = () => {
-            count.value++
-        }
-
-        const storeIncrement = () => {
-            store.commit('increment')
-        }
-
-        return {
-            count,
-            storeCount,
-            increment,
-            storeIncrement
-        }
+import {computed, ref, defineProps} from "vue";
+const props = defineProps({
+    msg: {
+        type: String,
+        required: true
     }
 })
+const store = useStore()
+
+const count = ref<number>(0)
+
+const storeCount = computed(() => store.state.count)
+
+const increment = () => {
+    count.value++
+}
+
+const storeIncrement = () => {
+    store.commit('increment')
+}
 </script>

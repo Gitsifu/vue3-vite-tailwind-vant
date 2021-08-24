@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-import vantTheme from './commom/vantTheme.js'
+import vantTheme from './commom/vantTheme.ts'
 import {defineComponent, reactive, ref} from "vue";
 
 export default defineComponent({
