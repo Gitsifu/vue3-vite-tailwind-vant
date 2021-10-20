@@ -1,8 +1,8 @@
 import vue from '@vitejs/plugin-vue'
-import { resolve } from 'path'
+import {resolve} from 'path'
 import {defineConfig} from "vite";
 import legacy from '@vitejs/plugin-legacy'
-import { visualizer } from 'rollup-plugin-visualizer';
+import {visualizer} from 'rollup-plugin-visualizer';
 
 export default defineConfig({
   plugins: [
@@ -19,11 +19,12 @@ export default defineConfig({
   ],
   resolve: {
     alias: [
-      { find: '@', replacement: resolve(__dirname, 'src') },
+      {find: '@', replacement: resolve(__dirname, 'src')},
     ],
     // or
     // alias: {
     //   '@': resolve(__dirname, 'src')
     // }
+    extensions: ['.js', '.ts', '.vue', '.json']
   }
 })

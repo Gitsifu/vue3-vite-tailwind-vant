@@ -4,6 +4,6 @@
 @tailwind utilities;
 
 /* 灰色主题 */
-.g-grey{
+.g-grey {
     filter: grayscale(100%);
 }
